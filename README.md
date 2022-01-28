@@ -42,7 +42,7 @@ $ pip install -r requirements.txt
 * Allennlp
 * torchtext
 
-# Datasets (SO, SCR)
+# Datasets (SO, and SCR)
 
 ## Sentence Ordering Dataset (SO)
 ```bash
@@ -53,14 +53,14 @@ Scripts for generating SO datasets are in the ``Dataset_Generation_so`` director
 
 What should be done to generate the datasets?
 
-creat *_pos and *_neg files and folders:
-```
+create *_pos and *_neg files and folders:
+```bash
 python Perm.py
 ```
 
 To create train, dev and test sets:
 
-```
+```bash
 python DataPrep_Docu.py --train_pos ./train_pos/ --train_neg ./train_neg/ --test_pos ./dev_pos/ --test_neg ./dev_neg/
 
 mv ./Dataset/test ./Dataset/dev
@@ -90,7 +90,7 @@ The dataset is taken from the [github repo](https://github.com/datienguyen/cnn_c
 You just need to create the vocabulary using the ``create_voc.py``. 
 
 ```bash
-python creat_voc.py --from_ner True
+python create_voc.py --from_ner True
 ```
 
 # Experiments
