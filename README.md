@@ -1,5 +1,5 @@
 
-# Improving Factual Consistency Between a Response and Persona Facts
+# A Neural Graph-based Local Coherence Model
 
 Entity grids and entity graphs are two frameworks for modeling local coherence. 
 These frameworks represent entity relations between sentences and then extract features from such representations to encode coherence. 
