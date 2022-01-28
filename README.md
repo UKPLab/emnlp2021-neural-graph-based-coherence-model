@@ -23,9 +23,9 @@ Don't hesitate to send us an e-mail, if something is broken (and it shouldn't be
 
 > This repository contains experimental software and is published for the sole purpose of giving additional background details on the respective publication.
 
-## Setup
+# Setup
 
-# Virtual Environment
+## Virtual Environment
 
 Our virtual environment is created as follows:
 ```bash
@@ -35,7 +35,7 @@ $ pip install -r requirements.txt
 ```
 
 
-# Main Packaged Required
+## Main Packaged Required
 
 * Python 3.6 with NumPy/SciPy
 * PyTorch 1.1 or higher
