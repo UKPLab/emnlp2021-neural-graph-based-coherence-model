@@ -27,7 +27,7 @@ You can run the following command to train our model, our parameter such as path
 ```python
 
 >>> python  experiments_unified.py \
-                                     --experiment_path  $PROJECT/Experiments/WSJ/ours/ \
+                                     --experiment_path  ./Experiments/WSJ/ours/ \
                                      --bilinear_dim 32 \
                                      --batch_size_train 1\
                                      --batch_size_test 1\
@@ -37,10 +37,10 @@ You can run the following command to train our model, our parameter such as path
 * You can run run the following command to test our model. We have prepared a trained model under the folder Experiments/ 
 ```python
 >>> python  experiments_unified.py \
-                                     --experiment_path  $PROJECT/Experiments/WSJ/ours/ \
+                                     --experiment_path  ./Experiments/WSJ/ours/ \
                                      --bilinear_dim 32 \
                                      --batch_size_train 1\
                                      --batch_size_test 16\
                                      --ELMo True \
                                      --only_eval True \
-                                     --model_name  $PROJECT/Experiments/WSJ/ours/2022_3_13_11_42/Epoch_3 
+                                     --model_name  ./Experiments/WSJ/ours/2022_3_13_11_42/Epoch_3 
