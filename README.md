@@ -65,12 +65,11 @@ We recommend that you organize your files and name them like we did in the file 
     │── fairseq 
     │── src 
     └── experiments_unified.py 
-
+```
 ## Getting Started
 * Install necessary dependencies listed in requirements.txt. Please note that if you fail to install torch-* (e.g. torch-scatter), run the following command
 ```python
  >>> pip install torch-scatter==2.0.5 torch-sparse==0.6.7 torch-cluster==1.5.7 torch-spline-conv==1.2.0 torch-geometric==1.6.1  -f https://pytorch-geometric.com/whl/torch-1.6.0+cu101.html
-
 ``` 
 - Download GoogleNews-vectors-negative300.bin from https://s3.amazonaws.com/dl4j-distribution/GoogleNews-vectors-negative300.bin.gz and put it under the folder data/
 
@@ -80,7 +79,6 @@ We recommend that you organize your files and name them like we did in the file 
 ## Training
 * You can run the following command to train our model, other parameters such as paths to datasts can be viewed in src/utils.py
 ```python
-
 >>> python  experiments_unified.py \
                                      --experiment_path  ./Experiments/WSJ/ours/ \
                                      --bilinear_dim 32 \
@@ -99,3 +97,4 @@ We recommend that you organize your files and name them like we did in the file 
                                      --ELMo True \
                                      --only_eval True \
                                      --model_name  ./Experiments/WSJ/ours/2022_3_13_11_42/Epoch_3 
+```
