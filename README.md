@@ -19,4 +19,12 @@ Data and code for our paper
 ``` 
 - Download GoogleNews-vectors-negative300.bin from https://s3.amazonaws.com/dl4j-distribution/GoogleNews-vectors-negative300.bin.gz
 
-Regard to WSJ license
+## Dataset
+*  Regard to WSJ license, we can't upload the raw data. All python files relating to data processing (e.g. generating vocab, paired samples) are under the folder data/Dataset_Global.
+
+## Training
+* All default parameters including paths to the dataset are list in src/utils.py 
+* You can run our_elmo.sh after modifying the parameters to train our models
+
+## Evaluation
+* You can run our_elmo_eval.sh to test our model. We have prepared a trained model under the folder Experiments/ 
