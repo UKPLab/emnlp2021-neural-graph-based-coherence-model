@@ -24,7 +24,7 @@ Data and code for our paper
 *  Prepare grid files and postive-negative paried text files.
 
 ## Training
-* You can run the following command to train our model, our parameter such as paths to datasts can be viewed in src/utils.py
+* You can run the following command to train our model, other parameters such as paths to datasts can be viewed in src/utils.py
 ```python
 
 >>> python  experiments_unified.py \
