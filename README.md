@@ -11,6 +11,61 @@ Data and code for our paper
   year={2021}
 }
 ```
+## File Tree
+We recommend that you organize your files and name them like we did in the file tree
+```
+    .
+    ├── Experiments # model dir
+    │   └── WSJ
+    │        └── ours
+    │              └── 2022_3_13_11_42
+    │                           │── Epoch_3
+    │                           └── log.out
+    │── data
+    │     │── GoogleNews-vectors-negative300.bin
+    │     │── allen_cache
+    │     │        │── elmo*.json
+    │     │        └── elmo*.hdf5
+    │     └── Dataset_Global
+    │            │── *.py
+    │            │── train_pos # 1240 postive samples
+    │            │       │── wsj_0001.pos.text
+    │            │       │── wsj_0002.pos.text
+    │            │       └── ...
+    │            │── train_neg # 1240*40 negative samples, each positive sample has 40 negative permuatations
+    │            │        │── wsj_0001.pos.text_1
+    │            │        │── wsj_0001.pos.text_2
+    │            │        │── ...
+    │            │        │── wsj_0002.pos.text_1
+    │            │        │── wsj_0002.pos.text_2 
+    │            │        └── ...
+    │            │── dev_pos # 138 postive samples
+    │            │── dev_neg # 138*40 negative samples
+    │            │── test_pos # 1053 postive samples
+    │            │── test_neg # 1053*40 negative samples
+    │            │── EGrid.train_dev # Grid files for postive/negative samples in train and dev sets
+    │            │          │── wsj_0001.pos.text.parsed.ner.EGrid 
+    │            │          │── wsj_0001.pos.text.parsed.ner.EGrid-1
+    │            │          └── ...
+    │            │── EGrid.test # Grid files for postive/negative samples in test set
+    │            │── Dataset
+    │            │      │── train # 1240*40 postive-negative pairs
+    │            │      │      │── wsj_0001.pos.text_1 
+    │            │      │      │── wsj_0001.pos.text_2
+    │            │      │      └── ...
+    │            │      │── dev  
+    │            │      │── test
+    │            │      └── vocab # vocab list for train set
+    │            │            │── Vocab
+    │            │            │── word2idx
+    │            │            └── idx2word 
+    │            │── wsj.train # paths to grid files for positive samples in train set
+    │            │── wsj.dev
+    │            └── wsj.test
+    │── fairseq 
+    │── src 
+    └── experiments_unified.py 
+
 ## Getting Started
 * Install necessary dependencies listed in requirements.txt. Please note that if you fail to install torch-* (e.g. torch-scatter), run the following command
 ```python
@@ -20,8 +75,7 @@ Data and code for our paper
 - Download GoogleNews-vectors-negative300.bin from https://s3.amazonaws.com/dl4j-distribution/GoogleNews-vectors-negative300.bin.gz and put it under the folder data/
 
 ## Dataset
-*  Regard to WSJ license, we can't upload the raw data. All python files relating to data processing (e.g. generating vocab, paired samples) are under the folder data/Dataset_Global.
-*  Prepare grid files and postive-negative paried text files.
+*  Regard to WSJ license, we can't upload the raw data. You can contact us to seek dataset help. 
 
 ## Training
 * You can run the following command to train our model, other parameters such as paths to datasts can be viewed in src/utils.py
