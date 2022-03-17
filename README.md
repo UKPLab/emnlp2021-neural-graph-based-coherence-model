@@ -13,4 +13,5 @@ Data and code for our paper
 ```
 ## Getting Started
 * Install necessary dependencies listed in requirements.txt. Please note that if you fail to install torch-* (e.g. torch-scatter), run the following command
+```python
  >>> pip install torch-scatter==2.0.5 torch-sparse==0.6.7 torch-cluster==1.5.7 torch-spline-conv==1.2.0 torch-geometric==1.6.1  -f https://pytorch-geometric.com/whl/torch-1.6.0+cu101.html
