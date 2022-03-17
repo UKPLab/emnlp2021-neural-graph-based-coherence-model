@@ -15,7 +15,7 @@ Data and code for our paper
 We recommend that you organize your files and name them like we did in the file tree
 ```
     .
-    ├── Experiments # model dir
+    ├── Experiments # model saved dir
     │   └── WSJ
     │        └── ours
     │              └── 2022_3_13_11_42
