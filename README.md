@@ -26,7 +26,7 @@ Data and code for our paper
 You can run the following command to train our model, our parameter such as paths to datasts can be viewed in src/utils.py
 ```python
 
->>> python  $PROJECT/experiments_unified.py \
+>>> python  experiments_unified.py \
                                      --experiment_path  $PROJECT/Experiments/WSJ/ours/ \
                                      --bilinear_dim 32 \
                                      --batch_size_train 1\
@@ -36,7 +36,7 @@ You can run the following command to train our model, our parameter such as path
 ## Evaluation
 * You can run run the following command to test our model. We have prepared a trained model under the folder Experiments/ 
 ```python
->>> python  $PROJECT/experiments_unified.py \
+>>> python  experiments_unified.py \
                                      --experiment_path  $PROJECT/Experiments/WSJ/ours/ \
                                      --bilinear_dim 32 \
                                      --batch_size_train 1\
